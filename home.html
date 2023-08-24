@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Republic</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--a container fluid for proper padding and alignment of the nav links-->
+        <div class="container-fluid">
+            <!--logo/brand name and a toggler icon button-->
+            <a href="#" class="navbar-brand">Tutorial Republic</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--navbar links that collapses in a small viewport-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Service</a>
+                    <a href="#" class="nav-item nav-link">About</a>
+                    <a href="#" class="nav-item nav-link">Contact</a>
+                </div>
+
+                <!--navbar links that are on the right-->
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Register</a>
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Container for Intro-->
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+            <h1>Learn to Create Websites</h1>
+            <!--use lead class to make the paragraph standout-->
+            <p class="lead">In today's world internet is the most popular way of connecting with the people. At <a 
+                href="https://www.tutorialrepublic.com" class="text-success" target="_blank">tutorialrepublic.com</a>
+                you will learn the essential web development technologies along with real life practice examples,
+                so that you can create your own website to connect with the people around the world.</p>
+
+            <!--a button to direct you on a new page-->
+            <p><a href="https://www.tutorialrepublic.com" class="btn btn-success btn-lg" target="_blank">Get started today</a></p>
+        </div>
+
+        <!--a row Container for the three columns-->
+        <div class="row">
+            <!--column 1-->
+            <div class="col-md-4">
+                <h2>HTML</h2>
+                <p>HTML is the standard markup language for describing the structure of the web pages. 
+                    Our HTML tutorials will help you to understand the basics of latest HTML5 language, so that you can create your own web pages or website.</p>
+                <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+            </div>
+
+            <!--column 2-->
+            <div class="col-md-4">
+                <h2>CSS</h2>
+                <p>CSS is used for describing the presentation of web pages. 
+                    Our CSS tutorials will help you to learn the essentials of latest CSS3 language, so that you can control the style and layout of your web pages or website.</p>
+                <p><a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+            </div>
+
+            <!--column 3-->
+            <div class="col-md-4">
+                <h2>JavaScript</h2>
+                <p>JavaScript is the programming language of the web. 
+                    Our JavaScript tutorials will help you to learn the basic as well as advanced features of the JavaScript scripting language, so that you can create dynamic web pages.</p>
+                <p><a href="https://www.tutorialrepublic.com/JavaScript-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+            </div>
+        </div>
+
+        <!--line above the footer-->
+        <hr>
+        <!--Container for the footer-->
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyrigh &copy; 2023 Tutorial Republic</p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-dark">Terms of Use</a>
+                    <span class="text-muted mx-2"> | </span>
+                    <a href="#" class="text-dark">Privacy Policy</a>
+                </div>
+            </div> 
+        </footer>
+    </div>
+
+    <!--Bootstrap JS-->
+    <!--Place at end of body for faster loading-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
