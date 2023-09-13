@@ -18,7 +18,7 @@
 }
 
 .dark-mode {
-    --primary-color: #0b061f;
+    --primary-color: #121212;
     --secondary-color: #fff;
 }
 
@@ -137,6 +137,10 @@ body {
     animation-delay: 1s;
 }
 
+.home .home-content h1 span {
+    color: var(--main-color);
+}
+
 .home .home-content p {
     font-size: 16px;
     opacity: 0;
@@ -245,7 +249,7 @@ body {
 }
 
 .profession-box .profession:nth-child(4) i {
-    margin-right: 44px;
+    margin-left: 14px;
 }
 
 .profession i {
@@ -287,13 +291,186 @@ body {
     width: 100%;
     max-width: 900px;
     /* max-height: 850px; */
-    margin-bottom: -6.5%;
+    margin-bottom: -5.09%;
     pointer-events: none;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 2.8s;
 }
 
+/* ABOUT SECTION */
+.about {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 7% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--primary-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 56px;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 28px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 14px 0 20px;
+}
+
+/* SERVICES SECTION */
+
+.services {
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.services h2 {
+    margin-top: 200px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4% 8% 8% 7%;
+}
+
+.services-container .services-box {
+    display: block;
+    width: 23%;
+    height: 45vh;
+    background: var(--primary-color);
+    padding: 5px 0 20px 0;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--primary-color);
+}
+
+.services-container .services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 48px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.services-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.services-box p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin: 15px 4px 20px;
+}
+
+.services-box .btn {
+    padding: 8px 16px;
+}
+
+/* PORTFOLIO SECTION */
+
+.porfolio {
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+}
+
+.portfolio h2 {
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin: 4% 8% 8% 7%;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+    width: 100%;
+}
+
+.portfolio-box .portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    color: #fff;
+}
+
+.portfolio-overlay h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.portfolio-overlay p {
+    font-size: 14px;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-overlay a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.portfolio-overlay a i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
 
 /* KEYFRAMES ANIMATION */
 @keyframes slideRight {
