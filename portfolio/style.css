@@ -295,7 +295,7 @@ body {
     width: 100%;
     max-width: 900px;
     /* max-height: 850px; */
-    /* margin-bottom: -6.26%; */
+    margin-bottom: -5.0%;
     pointer-events: none;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
