@@ -1,3 +1,12 @@
+// /*====== toggle icon navbar ======*/
+// let menuIcon = document.querySelector('#menu-icon');
+// let navbar = document.querySelector('.navbar');
+
+// menuIcon.onclick = () => {
+//     menuIcon.classList.toggle('bx-x');
+//     navbar.classList.toggle('active');
+// };
+
 /*====== dark mode active icon ======*/
 
 const toggleIcon = document.querySelector('.toggle-icon');

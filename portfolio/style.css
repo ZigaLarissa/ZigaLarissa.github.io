@@ -675,7 +675,12 @@ body {
         background: var(--main-color);
         border-top: .1rem solid var(--secondary-color);
         box-shadow: 0 .5rem 1rem var(--secondary-color);
+        /* display: none; */
     }
+
+    /* .navbar.active {
+        display: block;
+    } */
 
     .navbar a {
         display: block;
