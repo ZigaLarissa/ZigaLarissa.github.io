@@ -60,12 +60,6 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
-.header .menu-icon {
-    font-size: 3rem;
-    color: var(--primary-color);
-    display: none;
-}
-
 .navbar a {
     position: relative;
     display: inline-block;
@@ -110,6 +104,12 @@ body {
 .toggle .toggle-icon {
     font-size: 24px;
     color: var(--secondary-color);
+}
+
+#menu-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    display: none;
 }
 
 /* hovering effect */
@@ -645,15 +645,78 @@ body {
     html {
         font-size: 55%;
     }
+
+    .home .profession-container {
+        height: 85.8rem;
+    }
+
+    .home .profession-container .profession-box {
+        right: -12rem;
+        height: 85.8rem;
+    }
+
+    .home .profession-container .overlay {
+        right: -9rem;
+    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1065px) {
     .header {
         padding: 2rem 3%;
     }
 
     section {
         padding: 10rem 3% 2rem;
+    }
+
+    .home .profession-container .profession-box {
+        right: -22rem;
+    }
+
+    .home .profession-container .overlay {
+        right: -15rem;
+    }
+
+    .home-img img {
+        right: -7rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2) {
+        color: var(--main-color);
+    }
+
+    .navbar a.active::before {
+        background: var(--main-color);
+        opacity: .7;
+    }
+
+    .home .home-content {
+        max-width: 50rem;
+    }
+
+    .home .profession-container .profession-box {
+        right: -45rem;
+    }
+
+    .home .profession-container .overlay {
+        right: -39.5rem;
+    }
+
+    .home-img img {
+        display: none;
+    }
+
+    .services,
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
     }
 
     .footer {
@@ -666,25 +729,74 @@ body {
         display: block;
     }
 
+    #darkMode-icon {
+        position: absolute;
+        right: 6rem;
+        font-size: 2.6rem;
+        color: var(--secondary-color);
+        margin-bottom: .1rem;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background: var(--main-color);
-        border-top: .1rem solid var(--secondary-color);
-        box-shadow: 0 .5rem 1rem var(--secondary-color);
-        /* display: none; */
+        background: var(--primary-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
     }
 
-    /* .navbar.active {
+    .navbar.active {
         display: block;
-    } */
+    }
 
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+        color: var(--secondary-color);
+    }
+
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2) {
+        color: var(--secondary-color);
+    }
+
+    .navbar a.active {
+        color: var(--main-color);
+    }
+
+    .navbar a::before {
+        display: none;
+    }
+
+    .home {
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content .social-media a {
+        margin: 2.5rem .75rem 3rem;
+    }
+
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3); 
+        border-width: 23.9rem;
     }
 }

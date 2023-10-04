@@ -1,14 +1,15 @@
-// /*====== toggle icon navbar ======*/
-// let menuIcon = document.querySelector('#menu-icon');
-// let navbar = document.querySelector('.navbar');
+/*====== toggle icon navbar ======*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-// menuIcon.onclick = () => {
-//     menuIcon.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// };
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+
 
 /*====== dark mode active icon ======*/
-
 const toggleIcon = document.querySelector('.toggle-icon');
 
 toggleIcon.addEventListener('click', () => {
@@ -19,7 +20,6 @@ toggleIcon.addEventListener('click', () => {
 
 
 /*====== scroll sections active link ======*/
-
 // Select all 'section' elements on the page
 let sections = document.querySelectorAll('section');
 
@@ -58,5 +58,10 @@ window.onscroll = () => {
     /*====== sticky navbar ======*/
     let header = document.querySelector('header');
 
-    header.classList.toggle('sticky', window.scrollY > 600);
+    header.classList.toggle('sticky', window.scrollY > 50);
+
+
+    /*====== remove toggle icon and navbar when click navbar link (scroll) ======*/
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };
